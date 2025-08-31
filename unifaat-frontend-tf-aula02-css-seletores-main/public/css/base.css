@@ -1,0 +1,72 @@
+/* ===== Reset + base ===== */
+* {
+    /* Remove margens externas padrão ↓ */
+    margin: 0;
+    /* Remove paddings internos padrão ↓ */
+    padding: 0;
+    /* Calcula largura incluindo borda e padding ↓ */
+    box-sizing: border-box;
+    /* Define fonte padrão ↓ */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* Cor de fundo da página ↓ */
+    background: #ffffff;
+    /* Cor padrão do texto ↓ */
+    color: #111827;
+}
+
+header,
+footer {
+    /* Fundo azul escuro ↓ */
+    background: #004d7a;
+    /* Texto branco ↓ */
+    color: #ffffff;
+    /* Centraliza o conteúdo ↓ */
+    text-align: center;
+    /* Espaçamento interno ↓ */
+    padding: 20px;
+}
+
+footer {
+    /* Texto menor no rodapé ↓ */
+    font-size: 12px;
+}
+
+h1 {
+    /* Tamanho maior para títulos ↓ */
+    font-size: 32px;
+}
+
+main {
+    /* Layout flexível para organizar colunas ↓ */
+    display: flex;
+    /* Espaço entre elementos ↓ */
+    gap: 20px;
+    /* Espaçamento interno do container ↓ */
+    padding: 20px 15px;
+    /* Limita largura máxima ↓ */
+    max-width: 1100px;
+    /* Centraliza horizontalmente ↓ */
+    margin: 0 auto;
+    /* Garante uso de 100% da largura ↓ */
+    width: 100%;
+}
+
+img {
+    /* Limita largura máxima das imagens ↓ */
+    max-width: 200px;
+}
+
+
+/* ===== 2) Section de conteúdo ===== */
+.content {
+    /* Layout em coluna ↓ */
+    display: flex;
+    flex-direction: column;
+    /* Espaço entre elementos ↓ */
+    gap: 30px;
+    /* Faz crescer para ocupar espaço ↓ */
+    flex-grow: 1;
+}

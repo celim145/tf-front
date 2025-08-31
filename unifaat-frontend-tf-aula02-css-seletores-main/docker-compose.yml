@@ -1,0 +1,16 @@
+services:
+
+  nginx_tf_02:
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public:/var/www
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

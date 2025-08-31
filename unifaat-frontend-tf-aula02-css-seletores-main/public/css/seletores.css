@@ -1,0 +1,59 @@
+.content ul.demo {
+    list-style: none;
+    margin: 0;
+}
+
+.content ul.demo>li {
+    border-left: 2px solid transparent;
+    background-color: #F0F0F0;
+    padding: 8px;
+    margin-bottom: 2px;
+}
+
+.content ul.demo>li.selected {
+    border-left: 2px solid #000;
+    background-color: #00FF00;
+}
+
+
+/** CODAR SELETORES **/
+
+/* EX 1*/
+.content ul.demo>li:first-child {
+    background-color: yellow;
+}
+
+/* 1. Negrito */
+li:contains("negrito") {
+  font-weight: bold;
+}
+
+/* 2. Itálico */
+li:contains("itálico") {
+  font-style: italic;
+}
+
+/* 3. Vermelho */
+li:contains("vermelho") {
+  color: red;
+}
+
+/* 4. Fundo amarelo */
+li:contains("fundo amarelo") {
+  background: yellow;
+}
+
+/* 5. Texto grande */
+li:contains("texto grande") {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    margin-top: 1em;
+  }
+}

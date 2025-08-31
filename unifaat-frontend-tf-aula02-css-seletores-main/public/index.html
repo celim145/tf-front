@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aula 02 — CSS, Seletores e Responsividade</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/seletores.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Aula 02 — CSS, Seletores e Responsividade</h1>
+    </header>
+
+    <main>
+
+
+        <section class="content">
+            <h2>Conteúdo</h2>
+
+            <ul class="demo">
+                <li class="item exemplo">
+                    Quero que este li tenha <span>fundo amarelo</span>.
+                </li>
+                <li id="unico" class="item">
+                    Este aqui (#unico) deve ter o <span>texto vermelho</span>.
+                </li>
+                <li class="item" data-type="attr">
+                    Este com <code>data-type="attr"</code> deve ficar com <span>sublinhado</span>.
+                </li>
+                <li class="item" data-role="admin user">
+                    Aqui quero que apenas quando tiver <code>data-role~="user"</code> fique com <span>texto em
+                        itálico</span>.
+                </li>
+                <li class="item">
+                    Este é o <code>:first-child</code>, quero que o <span>tamanho da fonte aumente</span>.
+                </li>
+                <li class="item">
+                    Este é o <code>:last-child</code>, quero que ele tenha <span>uma borda azul</span>.
+                </li>
+                <li class="item ativo">
+                    Este tem a classe <code>.ativo</code>, quero que o <span>fundo fique cinza</span>.
+                </li>
+                <li class="item">
+                    Dentro deste li tem um <span>span</span>, quero que apenas o <span>span</span> fique em
+                    <strong>negrito</strong>.
+                </li>
+                <li class="item especial destaque">
+                    Este tem duas classes juntas (<code>.especial.destaque</code>), quero que o <span>texto fique em
+                        MAIÚSCULAS</span>.
+                </li>
+                <li class="item" lang="pt-br">
+                    Este tem atributo <code>lang="pt-br"</code>, quero que o <span>texto fique verde</span>.
+                </li>
+                <li class="item" title="começa-com">
+                    Aqui o atributo <code>title</code> começa com "começa", quero que o <span>texto fique em
+                        itálico</span>.
+                </li>
+                <li class="item" title="termina-com">
+                    Aqui o atributo <code>title</code> termina com "com", quero que o <span>fundo fique rosa</span>.
+                </li>
+            </ul>
+        </section>
+
+        <aside>
+            <img src="../img/squirtle.png" alt="Squirtle" />
+
+        </aside>
+    </main>
+
+    <footer>
+        <div>Frontend 2025.2</div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
