@@ -1,0 +1,10 @@
+{
+    "name": "unifaat-frontend-tf-aula03-vite-framework-css-forms-listeners",
+    "version": "1.0.0",
+    "main": "vite.config.js",
+    "author": "MIT",
+    "description": "",
+    "dependencies": {
+        "vite": "^6.3.5"
+    }
+}

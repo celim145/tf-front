@@ -1,0 +1,156 @@
+* {
+    /* Remove margens externas padrão ↓ */
+    margin: 0;
+    /* Remove paddings internos padrão ↓ */
+    padding: 0;
+    /* Calcula largura incluindo borda e padding ↓ */
+    box-sizing: border-box;
+    /* Define fonte padrão ↓ */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* Cor de fundo da página ↓ */
+    background: #ffffff;
+    /* Cor padrão do texto ↓ */
+    color: #111827;
+}
+
+header,
+footer {
+    /* Fundo azul escuro ↓ */
+    background: #004d7a;
+}
+
+h1 {
+    /* Tamanho maior para títulos ↓ */
+    font-size: 36px;
+}
+
+
+img {
+    /* Limita largura máxima das imagens ↓ */
+    max-width: 200px;
+}
+
+/* ===== 1) Aside à esquerda ===== */
+
+.controles>* {
+    /* Ocupa 100% do espaço disponível ↓ */
+    width: 100%;
+    /* Largura máxima para os inputs ↓ */
+    max-width: 200px;
+    /* Força exibir em bloco ↓ */
+    display: block;
+    /* Centraliza horizontalmente com espaçamento ↓ */
+    margin: 8px auto;
+}
+
+input[type="text"],
+select {
+    /* Espaçamento interno do campo ↓ */
+    padding: 10px 12px;
+    /* Borda azul ↓ */
+    border: 1px solid #004d7a;
+    /* Cantos arredondados ↓ */
+    border-radius: 8px;
+    /* Remove borda de foco padrão ↓ */
+    outline: none;
+    /* Cor do texto ↓ */
+    color: #004d7a;
+    /* Cor de fundo azul clara ↓ */
+    background: #e6f4ff;
+}
+
+input[type="text"]:focus,
+select:focus {
+    /* Destaca a borda ao focar ↓ */
+    border-color: #004d7a;
+    /* Efeito de sombra ao redor ↓ */
+    box-shadow: 0 0 0 3px rgba(0, 77, 122, 0.25);
+}
+
+.btn {
+    /* Fundo azul ↓ */
+    background: #004d7a;
+    /* Texto branco ↓ */
+    color: #ffffff;
+    /* Remove borda padrão ↓ */
+    border: none;
+    /* Espaçamento interno ↓ */
+    padding: 10px 16px;
+    /* Cantos arredondados ↓ */
+    border-radius: 8px;
+    /* Muda cursor para “mãozinha” ↓ */
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* Fundo mais claro no hover ↓ */
+    background: #0066a2;
+}
+
+.content {
+    /* Layout em coluna ↓ */
+    display: flex;
+    flex-direction: column;
+    /* Espaço entre elementos ↓ */
+    gap: 30px;
+    /* Faz crescer para ocupar espaço ↓ */
+    flex-grow: 1;
+}
+
+.controles>* {
+    /* Ocupa 100% do espaço disponível ↓ */
+    width: 100%;
+    /* Largura máxima para os inputs ↓ */
+    max-width: 200px;
+    /* Força exibir em bloco ↓ */
+    display: block;
+    /* Centraliza horizontalmente com espaçamento ↓ */
+    margin: 8px auto;
+}
+
+input[type="text"],
+select {
+    /* Espaçamento interno do campo ↓ */
+    padding: 10px 12px;
+    /* Borda azul ↓ */
+    border: 1px solid #004d7a;
+    /* Cantos arredondados ↓ */
+    border-radius: 8px;
+    /* Remove borda de foco padrão ↓ */
+    outline: none;
+    /* Cor do texto ↓ */
+    color: #004d7a;
+    /* Cor de fundo azul clara ↓ */
+    background: #e6f4ff;
+}
+
+input[type="text"]:focus,
+select:focus {
+    /* Destaca a borda ao focar ↓ */
+    border-color: #004d7a;
+    /* Efeito de sombra ao redor ↓ */
+    box-shadow: 0 0 0 3px rgba(0, 77, 122, 0.25);
+}
+
+.btn {
+    /* Fundo azul ↓ */
+    background: #004d7a;
+    /* Texto branco ↓ */
+    color: #ffffff;
+    /* Remove borda padrão ↓ */
+    border: none;
+    /* Espaçamento interno ↓ */
+    padding: 10px 16px;
+    /* Cantos arredondados ↓ */
+    border-radius: 8px;
+    /* Muda cursor para “mãozinha” ↓ */
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* Fundo mais claro no hover ↓ */
+    background: #0066a2;
+}
