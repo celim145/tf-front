@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 :: TF</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login View -->
+        <div id="login-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="senha" placeholder="Senha" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error" style="color: red;"></p>
+        </div>
+
+        <!-- App View (Logged In) -->
+        <div id="app-container" class="hidden">
+            <button id="logout-btn">Logout</button>
+
+            <div id="user-list-container">
+                <h2>Lista de Usuários</h2>
+                <table id="user-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Foto</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- User rows will be injected here -->
+                    </tbody>
+                </table>
+                <div id="pagination-controls">
+                    <button id="prev-page">Anterior</button>
+                    <span id="page-info"></span>
+                    <button id="next-page">Próxima</button>
+                </div>
+            </div>
+
+            <div id="upload-container" class="hidden">
+                <h2>Upload de Foto para <span id="upload-user-name"></span></h2>
+                <form id="upload-form">
+                    <input type="file" id="image-file" accept="image/*" required>
+                    <input type="hidden" id="upload-user-id">
+                    <button type="submit">Upload</button>
+                </form>
+                <p id="upload-message"></p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/ts/main.ts"></script>
+</body>
+</html>
